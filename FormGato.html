@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Gatos</title>
+    <link rel="stylesheet" href="Style.css">
+
+    <style>
+        h1 { text-align: center; color: #545384; margin: 80px 0 40px; font-size: x-large; }
+        p { color: black; }
+        .descricao { margin-bottom: 18px; margin-left: auto; margin-right: auto; max-width: 900px; font-size: large; }
+        form { max-width: 800px; margin: 0 auto; padding: 25px; border-radius: 10px; }
+        fieldset { border: none; margin: 0; padding: 0; }
+        input { background-color: #545384; width: 40px 50px; color: white; }
+        label { color: black; }
+        .perguntas { flex: 1 1 30%; min-width: 220px; display: flex; flex-direction: column; margin-top: 50px; }
+        .grupos { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 20px; }
+        label { margin-bottom: 12px; font-weight: 700; color: black; margin-bottom: 5px; }
+        input[type="text"], input[type="number"] { background-color: #545384; color: white; border-radius: 4px; border: none; padding: 7px 10px; font-size: 14px; }
+        input[type="text"]::placeholder, input[type="number"]::placeholder { color: aliceblue; }
+        input[type="radio"] { margin-left: 10px; transform: scale(1.2); cursor: pointer; }
+        .questoes { margin-bottom: 16px; font-weight: 700; color: black; }
+        .questoes label { align-items: center; display: flex; cursor: pointer; color: aliceblue; }
+        .botoes { text-align: center; margin-top: 60px; }
+        input[type="reset"], input[type="submit"] { background-color: #545384; color: white; border: none; border-radius: 5px; padding: 11px 22px; font-weight: bolder; font-size: 16px; cursor: pointer; }
+        input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { background-color: rgb(70, 8, 109); }
+        .respostas { display: flex; gap: 40px; margin-top: 7px; }
+        .upload { margin-top: 20px; margin-right: 20px; display: flex; gap: 12px; }
+        .upload button { display: flex; align-items: center; gap: 7px; border: none; padding: 11px 22px; background-color: #545384; color: white; cursor: pointer; border-radius: 5px; font-size: 15px; font: bolder; }
+        .upload img { width: 30px; height: 27px; }
+        h3 { padding-top: 80px; padding-bottom: 30px; }
+
+        /* navegação unificada usa classe .nav-centered no CSS global */
+    </style>
+
+
+</head>
+
+
+<body>
+
+<header>
+    <div class="nav nav-centered">
+        <a href="Inicial.html" class="logo" aria-label="Página inicial">
+            <img src="Assets/logo roxa (1).png" alt="Logo ACAPRA" width="50" height="50">
+        </a>
+        <a href="animais.html" class="nav-item" aria-current="page">Animais</a>
+        <a href="doacao.html" class="nav-item">Doações</a>
+        <a href="lar.html" class="nav-item">Lar temporário</a>
+        <a href="frequentes.html" class="nav-item">Perguntas frequentes</a>
+        <a href="maustratos.html" class="nav-item">Maus tratos</a>
+    </div>
+</header>
+
+    <h1>FORMULÁRIO DE ADOÇÃO DE GATOS</h1>
+    <br>
+    <p class="descricao">Seu coração ficou mais quentinho com algum de nossos pets? Preencha o formulário abaixo com as
+        informações necessárias e clique no botão de enviar para analisarmos seu pedido de adoção:</p>
+    <form action="" method="post">
+        <fieldset>
+            <div class="grupos">
+                <div class="perguntas">
+                    <label for="nome">Nome:</label>
+                    <input id="nome" name="nome" type="text" placeholder="Nome completo" required>
+                </div>
+                <div class="perguntas">
+                    <label for="numero">Número:</label>
+                    <input id="numero" name="numero" type="number" placeholder="Número para Contato" required>
+                </div>
+            </div>
+            <div class="questoes">Todos da sua residência concordam com a adoção?</div>
+            <div class="respostas">
+                <label><input type="radio" name="residencia-concorda" value="sim" required /> Sim</label>
+                <label><input type="radio" name="residencia-concorda" value="nao" /> Não</label>
+            </div>
+
+            <div class="questoes">São castrados e vacinados?</div>
+            <div class="respostas">
+                <label><input type="radio" name="saude" value="sim" required /> Sim</label>
+                <label><input type="radio" name="saude" value="nao" /> Não</label>
+            </div>
+
+            <div class="questoes">A sua residência tem telas?</div>
+            <div class="respostas">
+                <label><input type="radio" name="situacao-casa" value="sim" required /> Sim</label>
+                <label><input type="radio" name="situacao-casa" value="nao" /> Não</label>
+            </div>
+
+            <div class="questoes">Você deixaria o gato ter acesso à rua? Dar "voltinhas"?</div>
+            <div class="respostas">
+                <label><input type="radio" name="passeios" value="sim" required /> Sim</label>
+                <label><input type="radio" name="passeios" value="nao" /> Não</label>
+            </div>
+
+            <div class="questoes">A castração e vacinação do animal é obrigatória, você concorda com isso?</div>
+            <div class="respostas">
+                <label><input type="radio" name="castrados" value="sim" required /> Sim</label>
+                <label><input type="radio" name="castrados" value="nao" /> Não</label>
+            </div>
+        </fieldset>
+
+        <div class="upload">
+            <button type="button"><img src="Assets/upload.png" alt="Upload">Enviar fotos</button>
+        </div>
+
+        <div class="botoes">
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+    <h3 style="text-align:center; color:#545384;">A adoção responsável transforma vidas. Obrigado por considerar dar um lar cheio de amor!</h3>
+
+    <footer class="rodape">
+        <div>
+            <p>Qualquer dúvida, contate-nos:(47) 98474-9433</p>
+            <p>Acapra@gmail.com</p>
+        </div>
+    </footer>
+
+</body>
+</html>

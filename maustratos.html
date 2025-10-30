@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Denúncia Maus-Tratos a Animais</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+
+
+      .scroll-smooth { scroll-behavior: smooth; }
+      .bg-white { background-color: #fff; }
+      .bg-\[\#4B4B7A\] { background-color: #4B4B7A; }
+      .bg-\[\#E2A3A3\] { background-color: #E2A3A3; }
+
+      /* Flexbox */
+      .flex { display: flex; }
+      .flex-1 { flex: 1 1 0%; }
+      .flex-col { flex-direction: column; }
+      .justify-center { justify-content: center; }
+      .justify-between { justify-content: space-between; }
+      .items-center { align-items: center; }
+      .gap-8 { gap: 2rem; }
+
+
+      .max-w-xs { max-width: 20rem; }
+      .max-w-\[180px\] { max-width: 180px; }
+      .max-w-full { max-width: 100%; }
+      .max-w-5xl { max-width: 64rem; }
+      .mx-auto { margin-left: auto; margin-right: auto; }
+      .mt-1 { margin-top: 0.25rem; }
+      .mt-8 { margin-top: 2rem; }
+      .mt-10 { margin-top: 2.5rem; }
+      .mb-6 { margin-bottom: 1.5rem; }
+      .mb-8 { margin-bottom: 2rem; }
+      .mb-10 { margin-bottom: 2.5rem; }
+      .px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+      .px-4 { padding-left: 1rem; padding-right: 1rem; }
+      .py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+      .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+      .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+
+  
+      .text-\[\#4B4B7A\] { color: #4B4B7A; }
+      .text-\[\#D92B2B\] { color: #D92B2B; }
+      .text-white { color: #fff; }
+      .text-center { text-align: center; }
+      .text-right { text-align: right; }
+      .text-\[0\.625rem\] { font-size: 0.625rem; }
+      .text-\[0\.75rem\] { font-size: 0.75rem; }
+      .text-\[1\.25rem\] { font-size: 1.25rem; }
+      .text-\[1\.75rem\] { font-size: 1.75rem; }
+      .text-\[3\.5rem\] { font-size: 3.5rem; }
+      .font-bold { font-weight: 700; }
+      .font-extrabold { font-weight: 800; }
+      .leading-none { line-height: 1; }
+      .leading-tight { line-height: 1.25; }
+
+
+      .rounded-xl { border-radius: 0.75rem; }
+      .rounded-full { border-radius: 9999px; }
+      .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+
+      .select-none { user-select: none; }
+
+
+      @media (min-width: 640px) {
+        .sm\:flex-row { flex-direction: row; }
+        .sm\:px-0 { padding-left: 0; padding-right: 0; }
+        .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+        .sm\:max-w-sm { max-width: 24rem; }
+        .sm\:max-w-3xl { max-width: 48rem; }
+        .sm\:max-w-none { max-width: none; }
+        .sm\:w-1\/2 { width: 50%; }
+        .sm\:mb-0 { margin-bottom: 0; }
+      }
+
+      @media (min-width: 1024px) {
+        .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+      }
+
+      
+    </style>
+  </head>
+  <body class="bg-white text-[#4B4B7A]">
+    <header>
+      <div class="nav nav-centered">
+        <a href="Inicial.html">
+          <img src="Assets/logo roxa (1).png" alt="Logo ACAPRA" width="50" height="50" />
+        </a>
+        <a href="animais.html" class="nav-item">Animais</a>
+        <a href="doacao.html" class="nav-item">Doações</a>
+        <a href="lar.html" class="nav-item">Lar temporário</a>
+        <a href="frequentes.html" class="nav-item">Perguntas frequentes</a>
+        <a href="maustratos.html" class="nav-item" aria-current="page">Maus tratos</a>
+      </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+      <h1 class="text-center text-[#4B4B7A] text-[1.75rem] font-bold leading-none select-none mb-8">
+        Maus-tratos a animais
+      </h1>
+      
+      <p class="text-center font-bold text-[1.1rem] leading-tight mb-10 px-2 sm:px-0">
+        Suspeitou ou presenciou maus-tratos? Denuncie. Veja abaixo como agir passo a passo.
+      </p>
+
+      <div
+        class="flex flex-col sm:flex-row justify-center items-center gap-8 mb-10"
+      >
+        <img
+          src="Assets/Rian 1.jpeg"
+          alt="Imagem ilustrativa 1"
+          class="max-w-xs sm:max-w-sm rounded-xl shadow-lg"
+          loading="lazy" decoding="async"
+        />
+        <img
+          src="Assets/Rian 2.jpeg"
+          alt="Imagem ilustrativa 2"
+          class="max-w-xs sm:max-w-sm rounded-xl shadow-lg"
+          loading="lazy" decoding="async"
+        />
+      </div>
+
+      <section class="step-grid mb-8 px-2 sm:px-0">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3 class="icon-heading"><i class="fas fa-camera"></i> Registre evidências</h3>
+          <p>
+            Tire fotos e, se possível, faça vídeos das condições do animal. Esses registros
+            ajudam nas investigações.
+          </p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3 class="icon-heading"><i class="fas fa-bullhorn"></i> Denuncie às autoridades</h3>
+          <p>
+            Procure a delegacia, guarda municipal ou órgão ambiental da sua cidade. Você também pode denunciar
+            anonimamente pelo IBAMA: 0800 61 8080 (crimes contra a fauna silvestre).
+          </p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3 class="icon-heading"><i class="fas fa-share-alt"></i> Acompanhe e compartilhe</h3>
+          <p>
+            Sempre que possível, acompanhe o andamento da denúncia e promova a conscientização.
+          </p>
+        </div>
+      </section>
+
+      <p class="pill-banner text-center max-w-full sm:max-w-3xl mx-auto mb-10 select-none">
+        Tortura • Abandono • Alimentação inadequada • Causar dor e sofrimento desnecessários • Omissão de cuidados
+      </p>
+
+      <section class="info-grid mb-10 px-2 sm:px-0">
+        <div class="card-soft" style="padding: 16px;">
+          <h3 class="icon-heading"><i class="fas fa-paw"></i> O que são maus-tratos?</h3>
+          <ul style="list-style: none; padding-left: 0;">
+            <li><i class="fas fa-paw" aria-hidden="true"></i> Tortura, violência ou ferimentos</li>
+            <li><i class="fas fa-paw" aria-hidden="true"></i> Abandono e omissão de cuidados</li>
+            <li><i class="fas fa-paw" aria-hidden="true"></i> Alimentação inadequada ou privação de água/comida</li>
+            <li><i class="fas fa-paw" aria-hidden="true"></i> Confinamento em condições insalubres</li>
+          </ul>
+        </div>
+        <div class="card-soft" style="padding: 16px;">
+          <h3 class="icon-heading"><i class="fas fa-balance-scale"></i> Penalidades</h3>
+          <p>
+            A Lei nº 9.605/98 (Crimes Ambientais) prevê detenção de 3 meses a 1 ano, além de multa.
+            Todos os animais — domésticos, de rua ou silvestres — merecem respeito e dignidade.
+          </p>
+        </div>
+        <div class="card-soft" style="padding: 16px;">
+          <h3 class="icon-heading"><i class="fas fa-phone"></i> Onde denunciar</h3>
+          <ul style="list-style: none; padding-left: 0;">
+            <li><i class="fas fa-paw" aria-hidden="true"></i> Delegacia/Guarda municipal/Órgão ambiental local</li>
+            <li><i class="fas fa-paw" aria-hidden="true"></i> IBAMA: 0800 61 8080 (fauna silvestre)</li>
+            <li><i class="fas fa-paw" aria-hidden="true"></i> Emergências: acione a PM/Corpo de Bombeiros</li>
+          </ul>
+        </div>
+      </section>
+
+      <p class="text-center text-[1.25rem] font-extrabold text-[#D92B2B] select-none">
+        A DENÚNCIA PODE SALVAR VIDAS! NÃO SE CALE DIANTE DA CRUELDADE.
+      </p>
+    </main>
+
+    <footer class="rodape mt-10 text-center text-[0.75rem] text-[#4B4B7A] py-4">
+      <div>
+        <p>Qualquer dúvida, contate-nos: (47) 98474-9433</p>
+        <p>Acapra@gmail.com</p>
+      </div>
+</footer>
+ 
+
+</body>
+</html>
